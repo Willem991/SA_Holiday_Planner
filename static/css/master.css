@@ -1,0 +1,36 @@
+.navbar-custom{
+    height: 80px;
+    transition: height 0.5s ease-in-out;
+    background-color: black !important;
+}
+
+.nav-element-custom{
+    color: white !important;
+}
+
+.nav-brand-custom{
+    margin-left: 10%;
+}
+
+.nav-first-element-custom{
+    margin-left: 20%;
+}
+
+.nav-search-custom{
+    width: 35% !important;
+    margin-left: 5%;
+}
+
+.navbar-custom-bottom{
+    height: 40px;
+}
+
+
+.hide-nav{
+    height: 50px !important;
+}
+
+.carousel-custom{
+    /*width: 40%;
+    justify-self: center;*/
+}
