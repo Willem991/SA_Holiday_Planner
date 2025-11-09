@@ -37,7 +37,12 @@
 
                     {% if user.is_authenticated %}
                         <li class="nav-item">
-                            <a class="nav-link nav-element-custom" href="#">Logout</a>
+                            <form action="{% url 'accounts:logout' %}" method="post" style="display:inline;">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-link nav-link nav-element-custom" style="display:inline; border:none; background:none;">
+                                    Logout
+                                </button>
+                            </form>
                         </li>
                     {% else %}
                         <li class="nav-item">
