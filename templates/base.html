@@ -38,7 +38,7 @@
 
                     {% if user.is_authenticated %}
                         <li class="nav-item">
-                            <a href="{% url "accounts:profile" pk=user.pk %}" class="nav-link nav-element-custom">
+                            <a href="{% url "accounts:profile" %}" class="nav-link nav-element-custom">
                                 <i class="bi bi-person-circle"></i>
                             </a>
                         </li>
