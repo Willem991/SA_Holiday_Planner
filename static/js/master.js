@@ -13,7 +13,6 @@ window.addEventListener('scroll', () => {
 const bars = document.querySelectorAll('.bar');
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        console.log(bars)
         if (entry.isIntersecting) {
         // Add animation classes based on which bar it is
             if (entry.target.classList.contains('bar1')) {
