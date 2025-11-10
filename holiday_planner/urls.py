@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.IndexPage.as_view(), name='index'),
     path('accounts/', include('accounts.urls'), name='accounts'),
-    path('accounts/', include('django.contrib.auth.urls'))
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('placesofinterest/', include('locations.urls'), name='locations')
 ]
