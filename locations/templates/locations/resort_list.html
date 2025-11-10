@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    {% for places in resorts %}
+        <p>{{places.name}}</p>
+        <img src="{% static places.img_url.url|slice:'17:' %}" alt="">
+    {% endfor %}
+{% endblock  %}

@@ -14,7 +14,7 @@
     <div class='sticky-top'>
         <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top navbar-custom">
             <div class="container-fluid">
-                <a class="navbar-brand nav-element-custom nav-brand-custom me-4" href="#">Holiday SA</a>
+                <a class="navbar-brand nav-element-custom nav-brand-custom me-4" href="/">Holiday SA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -71,7 +71,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item nav-first-element-custom me-3">
-                    <a class="nav-link " href="#">Hotels</a>
+                    <a class="nav-link " href="{% url "locations:hotels" %}">Hotels</a>
                     </li>
                     <li class="nav-item me-3">
                     <a class="nav-link" href="{% url "locations:restaurants" %}">Restaurants</a>
@@ -80,10 +80,10 @@
                     <a class="nav-link" href="#">Activities</a>
                     </li>
                     <li class="nav-item me-3">
-                    <a class="nav-link" href="#">Resorts</a>
+                    <a class="nav-link" href="{% url "locations:resorts" %}">Resorts</a>
                     </li>
                     <li class="nav-item me-3">
-                    <a class="nav-link" href="#">Lodges</a>
+                    <a class="nav-link" href="{% url "locations:lodges" %}">Lodges</a>
                     </li>
                     <li class="nav-item me-3">
                     <a class="nav-link" href="#">Flights</a>
