@@ -3,7 +3,6 @@
 {% block content %}
     {% for places in restaurants %}
         <p>{{places.name}}</p>
-        <p>{{places.img_url.url}}</p>
-        <img src="{% static "{{places.img_url}}" %}" alt="">
+        <img src="{% static places.img_url.url|slice:'17:' %}" alt="">
     {% endfor %}
 {% endblock  %}

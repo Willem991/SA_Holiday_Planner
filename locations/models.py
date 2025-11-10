@@ -18,7 +18,7 @@ class Accommodations(models.Model):
         default='hotel'
     )
     
-    img_url = models.ImageField(upload_to='locations/images/', blank=True, null=True)
+    img_url = models.ImageField(upload_to='locations/static/images/', blank=True, null=True)
 
     
     def __str__(self):
